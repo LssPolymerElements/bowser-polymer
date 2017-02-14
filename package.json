@@ -1,0 +1,11 @@
+{
+  "name": "bowser-polymer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bowser-polymer.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1"
+  }
+}

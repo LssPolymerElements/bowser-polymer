@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>bowser-polymer demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="./bowser-polymer-demo.html">
+    <style is="custom-style">
+
+    </style>
+</head>
+
+<body unresolved>
+    <h3>bowser-polymer Polymer Element</h3>
+    <demo-snippet class="centered-demo">
+        <template is="dom-bind">
+            <bowser-polymer name="{{name}}" version="{{version}}" is-chrome="{{isChrome}}" is-msedge="{{isMsedge}}" is-msie="{{isMsie}}"
+                is-firefox="{{isFirefox}}" is-android="{{isAndroid}}" is-ios="{{isIos}}" is-opera="{{isOpera}}"></bowser-polymer>
+            <h1>Properties</h1>
+            <ul>
+                <li> Name: [[name]]</li>
+                <li> Version: [[version]]</li>
+                <li> isChrome: [[isChrome]]</li>
+                <li> isMsedge: [[isMsedge]]</li>
+                <li> isMsie: [[isMsie]]</li>
+                <li> isFirefox: [[isFirefox]]</li>
+                <li> isAndroid: [[isAndroid]]</li>
+                <li> isIos: [[isIos]]</li>
+                <li> isOpera: [[isOpera]]</li>
+            </ul>
+        </template>
+    </demo-snippet>
+</body>
+
+</html>
