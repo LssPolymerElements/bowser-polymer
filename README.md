@@ -2,6 +2,10 @@
 
 A polymer element that wraps bowser and exposes a few useful bindable properties.
 
+To install use: `bower install --save bowser-polymer`
+
+[ LIVE DEMO AND API ](https://www.webcomponents.org/element/LssPolymerElements/bowser-polymer)
+
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/LssPolymerElements/bowser-polymer)
 
 <!---
