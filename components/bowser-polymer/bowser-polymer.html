@@ -1,0 +1,65 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="bowser-polymer">
+    <template>
+        <style>
+
+        </style>
+    </template>
+    <script src="bower.js"></script>
+    <script>
+        Polymer({
+            is: 'bowser-polymer',
+            properties: {
+                name: {
+                    type: String,
+                    notify: true
+                },
+                version: {
+                    type: String,
+                    notify: true
+                },
+                isChrome: {
+                    type: Boolean,
+                    notify: true
+                },
+                isMsedge: {
+                    type: Boolean,
+                    notify: true
+                },
+                isMsie: {
+                    type: Boolean,
+                    notify: true
+                },
+                isFirefox: {
+                    type: Boolean,
+                    notify: true
+                },
+                isAndroid: {
+                    type: Boolean,
+                    notify: true
+                },
+                isIos: {
+                    type: Boolean,
+                    notify: true
+                },
+                isOpera: {
+                    type: Boolean,
+                    notify: true
+                }
+
+            },
+            ready() {
+                this.name = bowser.name;
+                this.version = bowser.version;
+                this.isChrome = bowser.chrome ? true : false;
+                this.isMsedge = bowser.msedge ? true : false;
+                this.isMsie = bowser.msie ? true : false;
+                this.isFirefox = bowser.firefox ? true : false;
+                this.isSafari = bowser.safari ? true : false;
+                this.isAndroid = bowser.android ? true : false;
+                this.isIos = bowser.ios ? true : false;
+                this.isOpera = bowser.opera ? true : false;
+            }
+        });
+    </script>
+</dom-module>

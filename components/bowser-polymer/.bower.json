@@ -1,0 +1,40 @@
+{
+  "name": "bowser-polymer",
+  "keywords": [
+    "polymer",
+    "bowser"
+  ],
+  "authors": [
+    "Aaron Drabeck <aaron-drabeck@leavitt.com>"
+  ],
+  "main": "bowser-polymer.html",
+  "description": "A polymer element that wraps bowser and exposes a few useful bindable properties.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0",
+    "paper-styles": "PolymerElements/paper-styles#^1.1.5",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.2.5"
+  },
+  "devDependencies": {
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/LssPolymerElements/bowser-polymer",
+  "_release": "f8c8c007a4",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f8c8c007a4abacc2a51f23d945cd24ef3819e429"
+  },
+  "_source": "https://github.com/LssPolymerElements/bowser-polymer.git",
+  "_target": "master",
+  "_originalSource": "LssPolymerElements/bowser-polymer",
+  "_direct": true
+}
