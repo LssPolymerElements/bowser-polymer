@@ -4,13 +4,19 @@ A polymer element that wraps bowser and exposes a few useful bindable properties
 
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/LssPolymerElements/bowser-polymer)
 
-
-<!--
+<!---
 ```
 <custom-element-demo>
   <template is="dom-bind">
-   <link rel="import" href="bowser-polymer-demo.html">
-      <bowser-polymer name="{{name}}" version="{{version}}" is-chrome="{{isChrome}}" is-msedge="{{isMsedge}}" is-msie="{{isMsie}}"
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="bowser-polymer.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<bowser-polymer name="{{name}}" version="{{version}}" is-chrome="{{isChrome}}" is-msedge="{{isMsedge}}" is-msie="{{isMsie}}"
                 is-firefox="{{isFirefox}}" is-android="{{isAndroid}}" is-ios="{{isIos}}" is-opera="{{isOpera}}"></bowser-polymer>
             <h1>Properties</h1>
             <ul>
@@ -24,11 +30,6 @@ A polymer element that wraps bowser and exposes a few useful bindable properties
                 <li> isIos: [[isIos]]</li>
                 <li> isOpera: [[isOpera]]</li>
             </ul>
-  </template>
-</custom-element-demo>
 ```
--->
-```html
-<bowser-polymer name="{{name}}" version="{{version}}" is-chrome="{{isChrome}}" is-msedge="{{isMsedge}}" is-msie="{{isMsie}}"
-                is-firefox="{{isFirefox}}" is-android="{{isAndroid}}" is-ios="{{isIos}}" is-opera="{{isOpera}}"></bowser-polymer>
-```
+
+
