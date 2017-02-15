@@ -10,16 +10,19 @@ A polymer element that wraps bowser and exposes a few useful bindable properties
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="bowser-polymer.html">
-    <next-code-block></next-code-block>
+    <div>
+      <template is="dom-bind">
+        <next-code-block></next-code-block>
+      </template>
+    </div>
   </template>
 </custom-element-demo>
 ```
 -->
 ```html
-<template is="dom-bind">
 <bowser-polymer name="{{name}}" version="{{version}}" is-chrome="{{isChrome}}" is-msedge="{{isMsedge}}" is-msie="{{isMsie}}"
                 is-firefox="{{isFirefox}}" is-android="{{isAndroid}}" is-ios="{{isIos}}" is-opera="{{isOpera}}"></bowser-polymer>
-            <h1>Properties</h1>
+            <h1>Bound Properties</h1>
             <ul>
                 <li> Name: [[name]]</li>
                 <li> Version: [[version]]</li>
@@ -31,7 +34,6 @@ A polymer element that wraps bowser and exposes a few useful bindable properties
                 <li> isIos: [[isIos]]</li>
                 <li> isOpera: [[isOpera]]</li>
             </ul>
-              </template>
 ```
 
 
