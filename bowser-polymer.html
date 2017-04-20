@@ -45,7 +45,16 @@
                 isOpera: {
                     type: Boolean,
                     notify: true
+                },
+                isMobile: {
+                    type: Boolean,
+                    notify: true
+                },
+                isTablet: {
+                    type: Boolean,
+                    notify: true
                 }
+
 
             },
             ready() {
@@ -59,6 +68,8 @@
                 this.isAndroid = bowser.android ? true : false;
                 this.isIos = bowser.ios ? true : false;
                 this.isOpera = bowser.opera ? true : false;
+                this.isMobile = bowser.mobile ? true : false;
+                this.isTablet = bowser.tablet ? true : false;
             }
         });
     </script>

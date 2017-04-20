@@ -20,7 +20,8 @@
     <demo-snippet class="centered-demo">
         <template is="dom-bind">
             <bowser-polymer name="{{name}}" version="{{version}}" is-chrome="{{isChrome}}" is-msedge="{{isMsedge}}" is-msie="{{isMsie}}"
-                is-firefox="{{isFirefox}}" is-android="{{isAndroid}}" is-ios="{{isIos}}" is-opera="{{isOpera}}"></bowser-polymer>
+                is-firefox="{{isFirefox}}" is-android="{{isAndroid}}" is-ios="{{isIos}}" is-opera="{{isOpera}}" is-mobile="{{isMobile}}"
+                is-tablet="{{isTablet}}"></bowser-polymer>
             <h1>Properties</h1>
             <ul>
                 <li> Name: [[name]]</li>
@@ -32,6 +33,8 @@
                 <li> isAndroid: [[isAndroid]]</li>
                 <li> isIos: [[isIos]]</li>
                 <li> isOpera: [[isOpera]]</li>
+                <li> isMobile: [[isMobile]]</li>
+                <li> isTablet: [[isMobile]]</li>
             </ul>
         </template>
     </demo-snippet>
