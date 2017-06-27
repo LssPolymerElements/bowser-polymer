@@ -7,57 +7,62 @@
     </template>
     <script src="bower.js"></script>
     <script>
-        Polymer({
-            is: 'bowser-polymer',
-            properties: {
-                name: {
-                    type: String,
-                    notify: true
-                },
-                version: {
-                    type: String,
-                    notify: true
-                },
-                isChrome: {
-                    type: Boolean,
-                    notify: true
-                },
-                isMsedge: {
-                    type: Boolean,
-                    notify: true
-                },
-                isMsie: {
-                    type: Boolean,
-                    notify: true
-                },
-                isFirefox: {
-                    type: Boolean,
-                    notify: true
-                },
-                isAndroid: {
-                    type: Boolean,
-                    notify: true
-                },
-                isIos: {
-                    type: Boolean,
-                    notify: true
-                },
-                isOpera: {
-                    type: Boolean,
-                    notify: true
-                },
-                isMobile: {
-                    type: Boolean,
-                    notify: true
-                },
-                isTablet: {
-                    type: Boolean,
-                    notify: true
+        class BowserPolymer extends Polymer.Element {
+            static get is() {
+                return 'bowser-polymer';
+            }
+
+            static get properties() {
+                return {
+                    name: {
+                        type: String,
+                        notify: true
+                    },
+                    version: {
+                        type: String,
+                        notify: true
+                    },
+                    isChrome: {
+                        type: Boolean,
+                        notify: true
+                    },
+                    isMsedge: {
+                        type: Boolean,
+                        notify: true
+                    },
+                    isMsie: {
+                        type: Boolean,
+                        notify: true
+                    },
+                    isFirefox: {
+                        type: Boolean,
+                        notify: true
+                    },
+                    isAndroid: {
+                        type: Boolean,
+                        notify: true
+                    },
+                    isIos: {
+                        type: Boolean,
+                        notify: true
+                    },
+                    isOpera: {
+                        type: Boolean,
+                        notify: true
+                    },
+                    isMobile: {
+                        type: Boolean,
+                        notify: true
+                    },
+                    isTablet: {
+                        type: Boolean,
+                        notify: true
+                    }
                 }
+            }
 
-
-            },
-            ready: function () {
+            ready() {
+                super.ready();
                 this.name = bowser.name;
                 this.version = bowser.version;
                 this.isChrome = bowser.chrome ? true : false;
@@ -71,6 +76,8 @@
                 this.isMobile = bowser.mobile ? true : false;
                 this.isTablet = bowser.tablet ? true : false;
             }
-        });
+        }
+
+        customElements.define(BowserPolymer.is, BowserPolymer);
     </script>
 </dom-module>

@@ -24,21 +24,27 @@
         </ul>
     </template>
     <script>
-        Polymer({
-            is: 'bowser-polymer-demo',
-            properties: {
-                name: String,
-                version: String,
-                isChrome: Boolean,
-                isMsedgee: Boolean,
-                isMsiee: Boolean,
-                isFirefox: Boolean,
-                isAndroid: Boolean,
-                isIos: Boolean,
-                isOpera: Boolean,
-                isMobile: Boolean,
-                isTablet: Boolean
+        class BowserPolymerDemo extends Polymer.Element {
+            static get is() {
+                return 'bowser-polymer-demo';
             }
-        });
+
+            static get properties() {
+                return {
+                    name: String,
+                    version: String,
+                    isChrome: Boolean,
+                    isMsedgee: Boolean,
+                    isMsiee: Boolean,
+                    isFirefox: Boolean,
+                    isAndroid: Boolean,
+                    isIos: Boolean,
+                    isOpera: Boolean,
+                    isMobile: Boolean,
+                    isTablet: Boolean
+                }
+            }
+        }
+        customElements.define(BowserPolymerDemo.is, BowserPolymerDemo);
     </script>
 </dom-module>
