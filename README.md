@@ -14,6 +14,7 @@ To install use: `bower install --save bowser-polymer`
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="bowser-polymer.html">
+    <link rel="import" href="../demo/index.html">
     <div>
       <template is="dom-bind">
         <next-code-block></next-code-block>
@@ -24,7 +25,6 @@ To install use: `bower install --save bowser-polymer`
 ```
 -->
 ```html
-   <template>
         <h3>Bowser Demo</h3>
 
         <bowser-polymer name="{{name}}" version="{{version}}" is-chrome="{{isChrome}}" is-msedge="{{isMsedge}}" is-msie="{{isMsie}}"
@@ -44,32 +44,6 @@ To install use: `bower install --save bowser-polymer`
             <li> isMobile: [[isMobile]]</li>
             <li> isTablet: [[isTablet]]</li>
         </ul>
-    </template>
-
-     <script>
-        class XDemo extends Polymer.Element {
-            static get is() {
-                return 'x-demo';
-            }
-
-            static get properties() {
-                return {
-                    name: String,
-                    version: String,
-                    isChrome: Boolean,
-                    isMsedgee: Boolean,
-                    isMsiee: Boolean,
-                    isFirefox: Boolean,
-                    isAndroid: Boolean,
-                    isIos: Boolean,
-                    isOpera: Boolean,
-                    isMobile: Boolean,
-                    isTablet: Boolean
-                }
-            }
-        }
-        customElements.define(XDemo.is, XDemo);
-    </script>
 ```
 
 
