@@ -11,7 +11,7 @@ To install use: `bower install --save bowser-polymer`
 <!---
 ```
 <custom-element-demo>
-  <template>
+  <template is="dom-bind">
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="bowser-polymer.html">
     <link rel="import" href="../demo/index.html">
