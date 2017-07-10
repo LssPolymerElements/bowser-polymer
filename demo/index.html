@@ -7,21 +7,74 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="./bowser-polymer-demo.html">
-    <style is="custom-style">
+    <link rel="import" href="../../polymer/polymer.html">
+    <link rel="import" href="../../lss-iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../lss-iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../bowser-polymer.html">
+    <style is="custom-style" include="demo-pages-shared-styles">
 
     </style>
 </head>
+<dom-module id="x-demo">
+    <template>
+        <style>
 
-<body unresolved>
-    <h3>bowser-polymer Polymer Element</h3>
-    <demo-snippet class="centered-demo">
-        <template>
-            <bowser-polymer-demo></bowser-polymer-demo>
-        </template>
-    </demo-snippet>
+        </style>
+        <h3>Bowser Demo</h3>
+        <demo-snippet>
+            <code>
+            <bowser-polymer name="{{name}}" version="{{version}}" is-chrome="{{isChrome}}" is-msedge="{{isMsedge}}" is-msie="{{isMsie}}"
+                is-firefox="{{isFirefox}}" is-android="{{isAndroid}}" is-ios="{{isIos}}" is-opera="{{isOpera}}" is-mobile="{{isMobile}}"
+                is-tablet="{{isTablet}}"></bowser-polymer>
+         </code>
+
+            <h1>Properties</h1>
+            <ul>
+                <li> Name: [[name]]</li>
+                <li> Version: [[version]]</li>
+                <li> isChrome: [[isChrome]]</li>
+                <li> isMsedge: [[isMsedge]]</li>
+                <li> isMsie: [[isMsie]]</li>
+                <li> isFirefox: [[isFirefox]]</li>
+                <li> isAndroid: [[isAndroid]]</li>
+                <li> isIos: [[isIos]]</li>
+                <li> isOpera: [[isOpera]]</li>
+                <li> isMobile: [[isMobile]]</li>
+                <li> isTablet: [[isTablet]]</li>
+            </ul>
+        </demo-snippet>
+    </template>
+
+    <script>
+        class XDemo extends Polymer.Element {
+            static get is() {
+                return 'x-demo';
+            }
+
+            static get properties() {
+                return {
+                    name: String,
+                    version: String,
+                    isChrome: Boolean,
+                    isMsedgee: Boolean,
+                    isMsiee: Boolean,
+                    isFirefox: Boolean,
+                    isAndroid: Boolean,
+                    isIos: Boolean,
+                    isOpera: Boolean,
+                    isMobile: Boolean,
+                    isTablet: Boolean
+                }
+            }
+        }
+        customElements.define(XDemo.is, XDemo);
+    </script>
+</dom-module>
+
+<body>
+    <div class="vertical-section-container centered">
+        <x-demo></x-demo>
+    </div>
 </body>
 
 </html>
